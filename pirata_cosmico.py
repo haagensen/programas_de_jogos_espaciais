@@ -5,8 +5,8 @@ versão em Python por Christian Haagensen Gontijo, 17/07/2017
 Em algum lugar atrás de você, na escuridão do espaço, está a nave de Elron, o Pirata Cósmico.
 Você sabe que ele está em algum ponto da rede tridimensional que aparece na tela da sua nave. 
 Você dispõe de quatro bombas. Pode lançá-las, uma a uma, em posições espeificada por três
-números entre 0 e 9, que deve fornecer ao compuador da nave.
-Conseguira acertar a nave de Elron antes que o piata o capture?
+números entre 0 e 9, que deve fornecer ao computador da nave.
+Conseguirá acertar a nave de Elron antes que o pirata o capture?
 """
 
 import random
