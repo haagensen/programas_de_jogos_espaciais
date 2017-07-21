@@ -15,7 +15,7 @@ def to_int(valor):
         pass
     return v
 
-
+random.randint()
 print("Decolagem")
 
 gravidade = random.randint(1, 20)
@@ -24,7 +24,7 @@ r = gravidade * peso
 
 print("Gravidade ", gravidade)
 for tentativa in range(11):
-    palpite = to_int(input("Diga angulo força: "))
+    palpite = to_int(input("Diga a força: "))
 
     if palpite > r:
         print("Muito grande", end="")

@@ -65,9 +65,9 @@ while ano < 11:
             break
     grana -= comida_comprada
 
-    if comida_comprada/populacao > 120:
+    if comida_comprada / populacao > 120:
         satisfacao += .1
-    elif comida_comprada/populacao < 80:
+    elif comida_comprada / populacao < 80:
         satisfacao -= .2
 
     while True:
@@ -87,7 +87,7 @@ while ano < 11:
     elif satisfacao > 1.1:
         qtd_minerio += random.randint(1, 21)
 
-    if populacao/numero_minas < 10:
+    if populacao / numero_minas < 10:
         print("Excesso de trabalho")
         sys.exit(0)
 

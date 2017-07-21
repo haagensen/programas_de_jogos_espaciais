@@ -1,3 +1,5 @@
+
+
 """
 Pirata Cósmico
 versão em Python por Christian Haagensen Gontijo, 17/07/2017

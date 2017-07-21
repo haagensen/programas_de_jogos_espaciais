@@ -33,10 +33,10 @@ for tentativa in range(9):
     velocidade = to_int(input("Diga a velocidade (0-40000) "))
 
     # usa 'altura' para calcular qual deve ser o ângulo, e subtrai do seu palpite para ver se você chegou perto
-    angulo = angulo - math.atan(altura / 3) * 180 / math.pi
+    angulo -= math.atan(altura / 3) * 180 / math.pi
 
     # calcula a velocidade correta e subtrai do seu palpite
-    velocidade = velocidade - 3000 * math.sqrt(altura + 1 / altura)
+    velocidade -= 3000 * math.sqrt(altura + 1 / altura)
 
     if abs(angulo) < 2 and abs(velocidade) < 100:
         print("Você conseguiu")
