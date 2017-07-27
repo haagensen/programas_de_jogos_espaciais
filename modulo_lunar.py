@@ -15,6 +15,7 @@ Uma quantidade maior diminui a velocidade. Procure pousar com a menor
 velocidade possível. Será que você vai conseguir pousar na Lua?
 """
 
+
 def to_int(valor):
     v = 0
     try:
@@ -58,7 +59,7 @@ nova_velocidade = velocidade + (5 - queimar) * altitude / velocidade
 print("")
 if nova_velocidade > 5:
     print("Vocês caíram... todos mortos")
-elif 1 < nova_velocidade <= 5:
+elif 1.0 < nova_velocidade <= 5:
     print("OK... mas alguns feridos")
 elif nova_velocidade <= 1:
     print("Boa aterrisagem")
