@@ -40,6 +40,16 @@ parede_esquerda = 10
 centro = largura
 parede_direita = largura
 
+#
+#  |      parede_esquerda                     centro                         parede_direita
+#  | <-----------------------> I <------------------------------> * <------------------------------> I
+#  |  (10 espaços, no início)     ("largura" espaços, no início)     ("largura" espaços, no início)
+#
+#  ^
+#  |
+#  +-- borda da tela
+
+
 while True:
 
     while True:
@@ -47,9 +57,19 @@ while True:
         if parede_esquerda + diferenca >= 0 or parede_esquerda + diferenca <= 20:
             break
 
+    # Muda a posição das paredes, de acordo com o valor de "diferenca"
     parede_esquerda += diferenca
     centro -= diferenca
     parede_direita += diferenca
+
+    #
+    #  |
+    #  | <-----------> I <-------------> * <-------------> I
+    #  |  + diferença      - diferença       + diferença
+    #
+    #  ^
+    #  |
+    #  +-- borda da tela
 
     # No código BASIC original:
     # 150 SCROLL
