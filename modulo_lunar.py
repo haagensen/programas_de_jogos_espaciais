@@ -1,9 +1,9 @@
 """
-Módulo Lunar
-versão em Python por Christian Haagensen Gontijo, 20/07/2017
+Módulo Lunar (Moonlander)
+versão em Python por Christian Haagensen Gontijo, 20/07/2017.
 
 Você está no controle de um módulo lunar que está levando um
-pequeno grupo de astronautas para a superfícia da Lua. Para
+pequeno grupo de astronautas para a superfície da Lua. Para
 pousar com segurança, você precisa reduzir a velocidade disparando
 um retrofoguete, mas seu suprimento de combustível é limitado.
 
@@ -46,7 +46,8 @@ while True:
     nova_velocidade = velocidade - queimar + 5
     combustivel -= queimar
 
-    # Se a distância percorrida desde a última queima é superior à altitude, você pousou a nave
+    # Se a distância percorrida desde a última queima é
+    # superior à altitude, você pousou a nave
     if (nova_velocidade + velocidade) / 2 >= altitude:
         break
 

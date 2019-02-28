@@ -1,13 +1,15 @@
 """
-Vale da Morte
-Versão em Python por Christian Haagensen Gontijo, 27/07/2017
+Vale da Morte (Death Valley)
+Versão em Python por Christian Haagensen Gontijo, 27/07/2017.
 
-Só há um meio de escapar ao ataque dos perigosos Dissectitrons. Você vai ter que respirar 
-fundo e entrar com a sua nave no perigoso desfiladeiro conhecido como Vale da Morte.
+Só há um meio de escapar ao ataque dos perigosos Dissectitrons. Você vai ter que
+respirar fundo e entrar com a sua nave no perigoso desfiladeiro conhecido como
+Vale da Morte.
 
-Seu computador vai querer saber a largura do vale. Comece com 15 e vá diminuindo aos poucos; 
-8 já é bastante difícil. Dirija sua nave apertando Q para ir para a esquerda e P para ir 
-para a direita, e veja se consegue atravessar o Vale da Morte.
+Seu computador vai querer saber a largura do vale. Comece com 15 e vá diminuindo
+aos poucos; 8 já é bastante difícil. Dirija sua nave apertando Q para ir para a
+esquerda e P para ir para a direita, e veja se consegue atravessar o Vale da
+Morte.
 """
 import random
 import sys
@@ -80,17 +82,23 @@ while True:
     if coluna != 0:
         for i in range(coluna):
             print(" ", end="")
+    screen.set_color(terminal.colors["YELLOW"])
     print("I", end="")  # uma "parede"...
+    screen.reset()
     coluna = centro
     if coluna != 0:
         for i in range(coluna):
             print(" ", end="")
+    screen.set_color(terminal.colors["LPURPLE"])
     print("*", end="")  # a sua nave...
+    screen.reset()
     coluna = parede_direita
     if coluna != 0:
         for i in range(coluna):
             print(" ", end="")
+    screen.set_color(terminal.colors["YELLOW"])
     print("I", end="")  # e a outra "parede"
+    screen.reset()
 
     timeout = 0
     pressionado = ""

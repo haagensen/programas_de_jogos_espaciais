@@ -1,14 +1,14 @@
 """
-Jogos Intergaláticos
-versão em Python por Christian Haagensen Gontijo, 17/07/2017
+Jogos Intergaláticos (Intergalactic Games)
+versão em Python por Christian Haagensen Gontijo, 17/07/2017.
 
-As redes de televisão da Terra estão competindo pela cobertura exclusiva dos Primeiros Jogos Intergaláticos.
-A companhia que conseguir primeiro colocar um satélite em órbita na altitude correta ganhará a concessão.
+As redes de televisão da Terra estão competindo pela cobertura exclusiva dos
+Primeiros Jogos Intergaláticos. A companhia que conseguir primeiro colocar um
+satélite em órbita na altitude correta ganhará a concessão.
 
 Você é o engenheiro que a Rede Século 21 encarregou de lançar o satélite. 
 Será que vai conseguir lançá-lo com o ângulo e velocidade corretos?
 """
-
 import random
 import math
 import sys
@@ -32,7 +32,8 @@ for tentativa in range(9):
     angulo = to_int(input("Diga o ângulo (0-90) "))
     velocidade = to_int(input("Diga a velocidade (0-40000) "))
 
-    # usa 'altura' para calcular qual deve ser o ângulo, e subtrai do seu palpite para ver se você chegou perto
+    # usa 'altura' para calcular qual deve ser o ângulo, e subtrai do seu
+    # palpite para ver se você chegou perto
     angulo -= math.atan(altura / 3) * 180 / math.pi
 
     # calcula a velocidade correta e subtrai do seu palpite

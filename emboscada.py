@@ -1,21 +1,24 @@
 """
-Emboscada
-Versão em Python por Christian Haagensen Gontijo, 22/07/2017
+Emboscada (Alien Snipers)
+Versão em Python por Christian Haagensen Gontijo, 22/07/2017.
  
- Você é o comandante de um cruzador interestelar que, por causa de um defeito nos motores de hiperespaço,
- entrou em uma zona proibida. Sua nave está sendo atacada por caças alienígenas, que, para tornar as 
- coisas piores, estão usando um aparelho de despistamento que faz com que o seu radar forneça leituras falsas.
- Felizmente, o computador de bordo fornece um número de código que você pode usar para calcular a posição 
- correta das naves inimigas. Mas você precisa ser rápido, elas não ficam muito tempo no mesmo lugar!
+Você é o comandante de um cruzador interestelar que, por causa de um defeito nos
+motores de hiperespaço, entrou em uma zona proibida. Sua nave está sendo atacada
+por caças alienígenas, que, para tornar as coisas piores, estão usando um
+aparelho de despistamento que faz com que o seu radar forneça leituras falsas.
+Felizmente, o computador de bordo fornece um número de código que você pode usar
+para calcular a posição correta das naves inimigas. Mas você precisa ser rápido,
+elas não ficam muito tempo no mesmo lugar!
  
- O computador imprime uma letra (a posição falsa do inimigo) e um número. Você deve avançar no alfabeto 
- esse número de letras e apertar a tecla correspondente. Por exemplo, para M4 você deve apertar a tecla 
- Q, para C2 a tecla E, e assim por diante. Quando você aperta uma tecla, dispara automaticamente o canhão
- de laser, e, se a letra estiver certa, destrói uma nave inimiga. Você pode escolher a difilcudade de cada 
- jogo, escolhendo um número de 1 a 10. Este número corresponde ao maior número que pode aparecer no código.
- Em cada jogo, você é atacado por 10 caças alienígenas. Veja quantos consegue acertar.
+O computador imprime uma letra (a posição falsa do inimigo) e um número. Você
+deve avançar no alfabeto esse número de letras e apertar a tecla correspondente.
+Por exemplo, para M4 você deve apertar a tecla Q, para C2 a tecla E, e assim por
+diante. Quando você aperta uma tecla, dispara automaticamente o canhão de laser,
+e, se a letra estiver certa, destrói uma nave inimiga. Você pode escolher a
+dificuldade de cada jogo, escolhendo um número de 1 a 10. Este número
+corresponde ao maior número que pode aparecer no código. Em cada jogo, você é
+atacado por 10 caças alienígenas. Veja quantos consegue acertar.
 """
-
 import random
 import sys
 import time

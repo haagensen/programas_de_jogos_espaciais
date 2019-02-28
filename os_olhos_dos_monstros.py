@@ -1,15 +1,17 @@
 """
-Os Olhos dos Monstros
-versão em Python por Christian Haagensen Gontijo, 30/06/2017
+Os Olhos dos Monstros (Beat the Bug Eyes)
+versão em Python por Christian Haagensen Gontijo, 30/06/2017.
 
-Você está encurralado! Para onde quer que se volte, os olhos frios e assustadores de um monstro
-do espaço o espreitam por um momento, antes que o animal se esconda atrás de uma pedra. Pouco a
-pouco, os monstros se aproximam de você, tentando envolvê-lo em seus tentáculos.
+Você está encurralado! Para onde quer que se volte, os olhos frios e
+assustadores de um monstro do espaço o espreitam por um momento, antes que o
+animal se esconda atrás de uma pedra. Pouco a pouco, os monstros se aproximam de
+você, tentando envolvê-lo em seus tentáculos.
 
-Felizmente, você está com a sua pistola de prótons. Os olhos dos monstros aparecem em quatro
-lugares diferentes da tela, que correspondem às teclas de 1 a 4. Se você apertar a tecla certa
-enquanto os olhos do monstro estiverem na tela, ele será destruído. Existem 10 monstros... à
-medida que você os destrói, sua chance de escapar aumenta.
+Felizmente, você está com a sua pistola de prótons. Os olhos dos monstros
+aparecem em quatro lugares diferentes da tela, que correspondem às teclas de 1 a
+4. Se você apertar a tecla certa enquanto os olhos do monstro estiverem na tela,
+ele será destruído. Existem 10 monstros... à medida que você os destrói, sua
+chance de escapar aumenta.
 """
 import time
 import random

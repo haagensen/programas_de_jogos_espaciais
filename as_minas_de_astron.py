@@ -1,6 +1,12 @@
 """
-As Minas de Astron
-versão em Python por Christian Haagensen Gontijo, 30/06/2017
+As Minas de Astron (Space Mines)
+versão em Python por Christian Haagensen Gontijo, 30/06/2017.
+
+Você acaba de ser eleito governador de uma colônia de mineração no Planeta
+Astron. Todas as decisões com relação à venda de minério, à compra de alimentos
+e à compra e venda de minas devem ser tomadas por você. Conseguirá manter a
+população satisfeita? Chegará ao fim do seu mandato de dez anos? Ou seu governo
+terminará em desastre?
 """
 
 import random

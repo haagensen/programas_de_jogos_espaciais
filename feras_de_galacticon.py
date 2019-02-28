@@ -1,13 +1,14 @@
 """
-Feras de Galacticon
-versão em Python por Christian Haagensen Gontijo, 21/07/2017
+Feras de Galacticon (Monsters of Galacticon)
+versão em Python por Christian Haagensen Gontijo, 21/07/2017.
 
-Pousar em Galacticon foi fácil... mas ninguém avisou a você que ali vivem algumas
-das mais perigosas feras do Universo.
+Pousar em Galacticon foi fácil... mas ninguém avisou a você que ali vivem
+algumas das mais perigosas feras do Universo.
 
-Ao ser atacado por um dos monstros, você precisa escolher uma de suas armas -- uma
-pistola de raios, um sabre de laser ou um triturador molecular -- para usar contra
-ele. Se fizer a escolha correta, talvez consiga sobreviver para conquistar Galacticon.
+Ao ser atacado por um dos monstros, você precisa escolher uma de suas armas --
+uma pistola de raios, um sabre de laser ou um triturador molecular -- para usar
+contra ele. Se fizer a escolha correta, talvez consiga sobreviver para
+conquistar Galacticon.
 """
 import random
 import sys

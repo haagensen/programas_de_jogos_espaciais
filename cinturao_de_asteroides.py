@@ -1,9 +1,10 @@
 """
-Cinturão de Asteróides
+Cinturão de Asteróides (Asteroid Belt)
 Versão em Python por Christian Haagensen Gontijo, 24/07/2017.
 
-Você está atravessando o Cinturão de Asteróides. Para não se chocar com eles, precisa 
-destruí-los; a força necessária para isso depende do tamanho do asteróide.
+Você está atravessando o Cinturão de Asteróides. Para não se chocar com eles, 
+precisa destruí-los; a força necessária para isso depende do tamanho do 
+asteróide.
 
 Os asteróides aparecem na tela do seu computador como grupos de estrelas. Para 
 destruí-los, você precisa apertar a tecla do número correspondente ao número de 
