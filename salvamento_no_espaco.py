@@ -33,6 +33,7 @@ def input_abs_int(mensagem):
         pass
     return v
 
+
 print("Salvamento no Espaço\n")
 
 instrucoes = input("Você precisa de instruções? ")
@@ -51,8 +52,8 @@ energia = random.randint(400, 801)    # int(rnd*400+401)
 tempo = int(distancia / math.sqrt(energia / 5) + .5)
 
 print("O planeta está a %s unidades de distância." % distancia)
-print("Você tem %s unidades de energia, e deve chegar em %s dias.\n" 
-        % (energia, tempo))
+print("Você tem %s unidades de energia, e deve chegar em %s dias.\n"
+      % (energia, tempo))
 
 while True:
     energia_motores = input_abs_int("Distribuição de energia para os motores?")
@@ -61,7 +62,7 @@ while True:
     if energia_motores + energia_ambiental + energia_blindagem <= energia:
         break
 
-energia_disponivel = energia - energia_motores - energia_ambiental - energia_blindagem 
+energia_disponivel = energia - energia_motores - energia_ambiental - energia_blindagem
 velocidade = int(math.sqrt(energia_motores))
 # Essa verificação aqui NÃO existia na versão BASIC original...
 if velocidade == 0:
@@ -75,18 +76,18 @@ print("Você dormiu %s dias\n" % tempo_dormindo)
 # O trecho abaixo é interessante (na versão BASIC) por mostrar um loop FOR
 # onde há vários "GOTO 430" que saltavam para a próxima iteração do loop;
 # ou seja, simulava com uma função "continue" (que o BASIC não tinha).
-for i in range (1, random.randint(6, 11)):
+for i in range(1, random.randint(6, 11)):
 
     if random.randint(0, 1) > .5:
         continue
 
     # Outro trecho interessante no BASIC: um GOTO que vai para
     # determinada linha, dependendo de um número aleatório:
-    #    310 GOTO 320 + INT(RND*4)*30 
+    #    310 GOTO 320 + INT(RND*4)*30
     # ou, em alguns computadores:
     #    310 ON INT(RND*4+1) GOTO 320, 350, 380, 410
     # minha versão em Python é um tanto mais simples.
-    rnd = random.randint(1,4)
+    rnd = random.randint(1, 4)
     if rnd == 1:
         print("Chuva de asteróides... blindagem danificada")
         energia_blindagem = energia_blindagem - 20 - random.randint(1, 40)
@@ -100,7 +101,7 @@ for i in range (1, random.randint(6, 11)):
         print("Radiação cósmica... defeito no controle ambiental")
         energia_ambiental = energia_ambiental - 20 - random.randint(1, 40)
 
-    # Na falta de uma instrução "sleep", o BASIC tinha aqui (linhas 430-440) 
+    # Na falta de uma instrução "sleep", o BASIC tinha aqui (linhas 430-440)
     # um laço FOR vazio...
     time.sleep(.5)
 
@@ -115,12 +116,12 @@ if energia_blindagem < 0:
     print("Blindagem destruída. Sua nave explodiu")
 if energia_ambiental <= 0:
     print("Controle ambiental inoperante. Você morreu")
-if velocidade <=0:
+if velocidade <= 0:
     print("Motores inoperantes")
 if tempo_dormindo > tempo:
     print("Você levou tempo demais")
 if (energia_blindagem < 0) or (energia_ambiental <= 0) or \
-    (velocidade <= 0) or (tempo_dormindo > tempo):
+   (velocidade <= 0) or (tempo_dormindo > tempo):
     sys.exit()
 
 gravidade = random.randint(5, 10)
