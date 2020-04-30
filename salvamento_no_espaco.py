@@ -114,14 +114,15 @@ else:
 print("Chegou em %s dias" % tempo_dormindo)
 if energia_blindagem < 0:
     print("Blindagem destruída. Sua nave explodiu")
+    sys.exit()
 if energia_ambiental <= 0:
     print("Controle ambiental inoperante. Você morreu")
+    sys.exit()
 if velocidade <= 0:
     print("Motores inoperantes")
+    sys.exit()
 if tempo_dormindo > tempo:
     print("Você levou tempo demais")
-if (energia_blindagem < 0) or (energia_ambiental <= 0) or \
-   (velocidade <= 0) or (tempo_dormindo > tempo):
     sys.exit()
 
 gravidade = random.randint(5, 10)
@@ -158,6 +159,7 @@ if energia_blindagem < (atmosfera * 10):
     sys.exit()
 
 print("Você pousou lindamente... parabéns")
+
 if (energia_disponivel - energia_blindagem - energia_retrofoguetes) > 25:
     sys.exit()
 print("Pena que você não tem energia suficiente para abrir a escotilha")  # caramba!
