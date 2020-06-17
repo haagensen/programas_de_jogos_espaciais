@@ -105,8 +105,13 @@ while True:
     while True:
         time.sleep(0.2)
         if screen.kbhit():
-            pressionado = screen.getch().decode(sys.stdout.encoding).upper()
-            break
+            tecla = screen.getch()
+            if type(tecla) is bytes:
+                pressionado = tecla.decode(sys.stdout.encoding).upper()
+                break
+            elif type(tecla) is str:
+                pressionado = tecla.upper()
+                break
         timeout += 1
         if timeout > 1:
             break
